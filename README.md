@@ -3,7 +3,11 @@
 A [Hotwire](https://hotwired.dev/) [Stimulus](https://stimulus.hotwired.dev/) controller which uses a [blurhash](https://blurha.sh/) to set the element's background.
 
 <p align="center">
-  <img src="https://badgen.net/npm/v/stimulus-blurhash" alt="npm version">
+  <img src="./docs/blurhash-intro.png" alt="from code to view intro image">
+  <br>
+  <a href="https://www.npmjs.com/package/stimulus-blurhash" rel="nofollow">
+    <img src="https://badgen.net/npm/v/stimulus-blurhash" alt="npm version">
+  </a>
   <a href="https://bundlephobia.com/result?p=stimulus-blurhash" rel="nofollow">
     <img src="https://badgen.net/bundlephobia/minzip/stimulus-blurhash" alt="minified + gzip size">
   </a>
@@ -11,6 +15,11 @@ A [Hotwire](https://hotwired.dev/) [Stimulus](https://stimulus.hotwired.dev/) co
   <img src="https://badgen.net/npm/license/stimulus-blurhash" alt="MIT license">
 </p>
 <br />
+
+Use it for
+* nice previews while images are loading,
+* for padding to aspect ratios,
+* or just to create fancy backgrounds.
 
 
 ## Getting Started
