@@ -9,7 +9,6 @@ A [Hotwire](https://hotwired.dev/) [Stimulus](https://stimulus.hotwired.dev/) co
   </a>
   <img src="https://badgen.net/npm/types/tslib" alt="types included">
   <img src="https://badgen.net/npm/license/stimulus-blurhash" alt="MIT license">
-  <img src="./docs/assets/example-buildstatus-badge.png" alt="Sauce test status">
 </p>
 <br />
 
@@ -35,7 +34,9 @@ The blur hash `LGF...` in this example is from https://blurha.sh/.
   <!-- any content here -->
 </div>
 ```
+
 becomes
+
 <img src="./docs/blurhash-example.png" alt="rendered blurhash">
 
 The screenshot actually uses the classes `m-10 rounded-xl shadow-xl w-3/4 h-3/4` from [tailwindcss](https://tailwindcss.com/).
@@ -55,7 +56,7 @@ Register the controller in your stimulus application:
 ```js
 import { application } from "./application";
 
-import BlurhashController from "./blurhash_controller";
+import { BlurhashController } from "./blurhash_controller";
 application.register("blurhash", BlurhashController);
 ```
 
@@ -69,9 +70,11 @@ and then use it with any element:
 
 Style it any way you want, only background-size and background-color are managed by this library.
 
+```html
 <div class="w-96 h-72 flex justify-center items-center text-xl text-white m-10 rounded-xl shadow-xl bg-red-500 bg-blend-difference" data-controller="blurhash" data-blurhash-blurhash-value="LGF5?xYk^6#M@-5c,1J5@[or[Q6.">
   Hello world
 </div>
+```
 
 It even works on the document body:
 
