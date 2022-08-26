@@ -1,0 +1,52 @@
+{
+  "name": "stimulus-blurhash",
+  "version": "0.0.0",
+  "description": "Stimulus Controller adding a blurhash background",
+  "sideEffects": false,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "amdName": "StimulusBlurhash",
+  "author": "@bb",
+  "license": "MIT",
+  "external": "@hotwired/stimulus",
+  "scripts": {
+    "prebuild": "$npm_execpath run clean",
+    "build": "tsc --noEmit false --declaration true --emitDeclarationOnly true --outDir dist/types && rollup -c",
+    "dev": "rollup -wc",
+    "lint": "prettier --check *.js **/*.js **/*.ts src/**/*.ts",
+    "format": "prettier --write *.js **/*.js **/*.ts src/**/*.ts",
+    "clean": "rimraf dist *.tsbuildinfo coverage",
+    "prerelease": "$npm_execpath run build",
+    "release": "np"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/plugin-proposal-class-properties": "^7.18.4",
+    "@babel/plugin-transform-runtime": "^7.18.5",
+    "@babel/preset-modules": "^0.1.5",
+    "@hotwired/stimulus": ">=3",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "babel-loader": "^8.2.5",
+    "np": "^7.6.0",
+    "prettier": "^2.7.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.78.0",
+    "rollup-plugin-filesize": "^9.1.2",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bb/stimulus-blurhash"
+  },
+  "dependencies": {
+    "blurhash": "^1.1.5"
+  },
+  "peerDependencies": {
+    "@hotwired/stimulus": ">= 3"
+  }
+}

@@ -1,0 +1,10 @@
+/dist
+/node_modules
+yarn-error.log
+.DS_Store
+/coverage
+*.tgz
+*.tsbuildinfo
+*.log
+*~
+.rollup.cache
